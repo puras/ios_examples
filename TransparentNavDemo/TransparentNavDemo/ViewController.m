@@ -21,6 +21,9 @@
     
     [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"01"] forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
+    
+    // 设置透明图片后，会有一条白线阴影，通过下面的方式去掉白线
+    self.navigationController.navigationBar.shadowImage = [[UIImage alloc] init];
 
 }
 
